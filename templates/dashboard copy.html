@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="/static/dash.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+ <!-- TradingView Widget BEGIN -->
+ <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <!-- <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div> -->
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols" :[
+      {
+        "proName": "FOREXCOM:SPXUSD",
+        "title": "S&P 500 Index"
+      },
+      {
+        "proName": "FOREXCOM:NSXUSD",
+        "title": "US 100 Cash CFD"
+      },
+      {
+        "proName": "FX_IDC:EURUSD",
+        "title": "EUR to USD"
+      },
+      {
+        "proName": "BITSTAMP:BTCUSD",
+        "title": "Bitcoin"
+      },
+      {
+        "proName": "BITSTAMP:ETHUSD",
+        "title": "Ethereum"
+      }
+    ],
+    "showSymbolLogo": true,
+    "isTransparent": false,
+    "displayMode": "adaptive",
+    "colorTheme": "light",
+    "locale": "in"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+    <nav>
+        <img src="/images/logo1.png" id="tt-vertical" alt="Product logo" width="40" height="40" class="jsx-3184039651 jsx-1930599188 jsx-2516863269 pointer ">
+        <h1>StalkingStocks</h1>
+        <!-- <form class="d-flex" action="#">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="srch">
+            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            <button class="btn btn-dark" type="submit">Search</button>
+        </form> -->
+        <ul class="nav">
+            
+
+            <li><a class="nav-link active" aria-current="page" style="color: beige;" href="#">Home</a></li>
+            <li><a class="nav-link active" aria-current="page" style="color: beige;" href="#">Portfolio</a></li>
+            <li><a class="nav-link active" aria-current="page" style="color: beige;" href="#">Logout</a></li>
+            <li class="search-icon"><a href="#"><i class="fa-solid fa-magnifying-glass" style="color: beige; "></i></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- <div class="dashboard">
+            <div class="info">
+                <h2>Welcome, Trader</h2>
+                
+            </div> -->
+            <!-- <div class="avail-stocks">
+                <h2 class="headings">Today's Stock</h2>
+                
+                
+              
+
+
+                <div class="row">
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <img class="card-img-top" src="/images/apple.png" alt="Card image cap" height="150px" width="100px">
+
+                        <div class="card-body">
+                          <h5 class="card-title">Apple</h5>
+                          <p class="card-text">Apple Inc. is an American multinational corporation and technology company headquartered in Cupertino, California, in Silicon Valley. It designs, develops, and sells consumer electronics, computer software, and online services.</p> -->
+                          <!-- <a href="/templates/apple.html" class="btn btn-primary">VIEW</a>
+                        </div>
+                      </div>
+                    </div> -->
+
+                    <!-- <div class="col-sm-6">
+                      <div class="card">
+                        <img class="card-img-top" src="/images/apple.png" alt="Card image cap" height="150px" width="100px">
+
+                        <div class="card-body">
+                          <h5 class="card-title">Apple</h5>
+                          <a href="#" class="btn btn-primary">VIEW</a>
+                        </div>
+                      </div>
+                    </div> -->
+
+
+
+                    <div class="container-fluid block-content">
+                      <div class="text-center hgroup wow zoomInUp" data-wow-delay="0.3s">
+                        <button style="
+                        padding: 15px 25px;
+                        font-size: 25px;
+                        text-align: center;
+                        cursor: pointer;
+                        color: #fff;
+                        background-color:#3b444b;
+                        border-radius: 10px;
+                        box-shadow: 0 5px #0a0a0a;"
+                      >OUR SERVICES</button>
+                      </div>
+                      
+                     
+                      
+
+                      <div class="row our-services text-center">
+                        <div class="col-sm-6 col-md-4 col-lg-4 wow zoomInLeft" 
+                          data-wow-delay="0.3s" >
+                         <a href="demat/index.html">
+                            <!-- <span><img src="icon/account.gif"  height="50px" width="50px"></span> -->
+                            <button style="
+                              padding: 15px 25px;
+                              font-size: 25px;
+                              text-align: center;
+                              cursor: pointer;
+                              color: #fdf8f8;
+                              background-color: #3b444b;
+                              border-radius: 10px;
+                              box-shadow: 0 5px #0a0a0a;"
+                            >Demat & Trading  Account</button>
+                            <p>
+                            </p>
+                          </a>
+                        </div>
+
+
+
+
+
+                        <div
+                          class="col-sm-6 col-md-4 col-lg-4 wow zoomInUp"
+                          data-wow-delay="0.3s">
+                          <a href="sevice/trading/trading.html">
+                            <!-- <span><img src="icon/c.gif" height="50px" width="50px"></i></span> -->
+                            <button style="
+                            padding: 20px 35px;
+                            font-size: 25px;
+                            text-align: center;
+                            cursor: pointer;
+                            color: #fff;
+                            background-color: #3b444b;
+                            border-radius: 10px;
+                            box-shadow: 0 5px #0a0a0a;"
+                          >Trading </button>
+                            <p></p>
+                          </a>
+                        </div>
+
+
+
+                        <div
+                        class="col-sm-6 col-md-4 col-lg-4 wow zoomInLeft"
+                        data-wow-delay="0.3s">
+                        <a href="earn/index.html">
+                          <!-- <span><img src="icon/earn.gif"  height="50px" width="50px"></i> </span> -->
+                          <button style="
+                          padding: 15px 25px;
+                          font-size: 25px;
+                          text-align: center;
+                          cursor: pointer;
+                          color: #fff;
+                          background-color: #3b444b;
+                          border-radius: 10px;
+                          box-shadow: 0 5px #080808;"
+                        > Earning </button>
+                          <p></p>
+                        </a>
+                      </div>
+                       
+                      
+                      
+                      <div
+                          class="col-sm-6 col-md-4 col-lg-4 wow zoomInLeft"
+                          data-wow-delay="0.3s">
+                          <a href="comming/index.html">
+                            <!-- <span><img src="icon/card.gif"  height="50px" width="50px"> </span> -->
+                            <button style="
+                            padding: 15px 25px;
+                            font-size: 25px;
+                            text-align: center;
+                            cursor: pointer;
+                            color: #fff;
+                            background-color: #3b444b;
+                            border-radius: 10px;
+                            box-shadow: 0 5px #070707;"
+                          >Credit Cards </button>
+                            <p></p>
+                          </a>
+                        </div>
+                       
+
+
+                        <div
+                          class="col-sm-6 col-md-4 col-lg-4 wow zoomInLeft"
+                          data-wow-delay="0.3s">
+                          <a href="comming/index.html">
+                            <!-- <span><img src="icon/money.gif" height="50px" width="50px"></span> -->
+                            <button style="
+                          padding: 15px 25px;
+                          font-size: 25px;
+                          text-align: center;
+                          cursor: pointer;
+                          color: #fff;
+                          background-color: #3b444b;
+                          border-radius: 10px;
+                          box-shadow: 0 5px #0a0a0a;">Investment</button>
+                            <p></p>
+                          </a>
+                        </div>
+                        
+                        
+                        
+                        
+                        <div
+                          class="col-sm-6 col-md-4 col-lg-4 wow zoomInLeft"
+                          data-wow-delay="0.3s">
+                          <a href="app/trading.html">
+                            <!-- <span><img src="icon/live.gif"  height="50px" width="50px"></span> -->
+                            <button style="  
+                            padding: 15px 25px;
+                            font-size: 25px;
+                            text-align: center;
+                            cursor: pointer;
+                            color: #fff;
+                            background-color: #3b444b;
+                            border-radius: 10px;
+                            box-shadow: 0 5px #111111;"
+                          >Real Time Apple chart </button>
+                            <p></p>
+                          </a>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <div
+                          class="col-sm-6 col-md-4 col-lg-4 wow zoomInLeft"
+                          data-wow-delay="0.3s">
+                          <a href="crypto/cry.html">
+                            <!-- <span><img src="icon/lif.gif"  height="50px" width="50px"></span> -->
+                            <button style=" 
+                            padding: 15px 25px;
+                            font-size: 20px;
+                            text-align: center;
+                            cursor: pointer;
+                            color: #fff;
+                            background-color: #3b444b;
+                            border-radius: 10px;
+                            box-shadow: 0 5px #050505;"
+                          >Live Crypto Price </button>
+                            <p></p>
+                          </a>
+                        </div>
+                        
+                       
+                       
+                       
+                        <div
+                          class="col-sm-6 col-md-4 col-lg-4 wow zoomInLeft"
+                          data-wow-delay="0.3s"   >
+                          <a href="apple/index.html">
+                            <!-- <span><img src="icon/apple.gif"  height="50px" width="50px"></span> -->
+                            <button style=" 
+                            padding: 15px 25px;
+                            font-size: 37px;
+                            text-align: center;
+                            cursor: pointer;
+                            color: #fff;
+                            background-color: #3b444b;
+                            border-radius: 10px;
+                            box-shadow: 0 5px #070707;"
+                          >Apple Store </button>
+                            <p> </p>
+                          </a>
+                        </div>
+                       
+                       
+                       
+                       
+                       
+                        <div
+                        class="col-sm-6 col-md-4 col-lg-4 wow zoomInLeft"
+                        data-wow-delay="0.3s">
+                        <a href="google/index.html">
+                          <!-- <span><img src="icon/google.png"  height="50px" width="50px"></span> -->
+                          <button style="
+                          padding: 15px 25px;
+                          font-size: 28px;
+                          text-align: center;
+                          cursor: pointer;
+                          color: #fff;
+                          background-color: #3b444b;
+                          border-radius: 10px;
+                          box-shadow: 0 5px #070707;"
+                        >Google Store </button>
+                          <p></p>
+                        </a>
+                      </div>
+                     
+
+
+
+
+                      <div
+                      class="col-sm-6 col-md-4 col-lg-4 wow zoomInLeft"
+                      data-wow-delay="0.3s" >
+                      <a href="course/form.html">
+                        <!-- <span><img src="icon/cource.png"  height="50px" width="50px"></span> -->
+                        <button style="
+                        padding: 15px 25px;
+                        font-size: 28px;
+                        text-align: center;
+                        cursor: pointer;
+                        color: #fff;
+                        background-color: #3b444b;
+                        border-radius: 10px;
+                        box-shadow: 0 5px #070707;"
+                      >Free Courses </button>
+                        <p>   
+                        </p>
+                      </a>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <div
+                    class="col-sm-6 col-md-4 col-lg-4 wow zoomInLeft"
+                    data-wow-delay="0.3s"   >
+                    <a href="imageo/index.html">
+                      <!-- <span><img src="icon/image.png"  height="50px" width="50px"></span> -->
+                      <button style="
+                      padding: 15px 25px;
+                      font-size: 28px;
+                      text-align: center;
+                      cursor: pointer;
+                      color: #fff;
+                      background-color: #3b444b;
+                      border-radius: 10px;
+                      box-shadow: 0 5px #070707;"
+                    >Image To Text</button>
+                      <p></p>
+                    </a>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="col-sm-6 col-md-4 col-lg-4 wow zoomInLeft"
+                    data-wow-delay="0.3s">
+                    <a href="paidcourse/login.html">
+                      <!-- <span><img src="icon/image.png"  height="50px" width="50px"></span> -->
+                      <button style="
+                      padding: 15px 25px;
+                      font-size: 28px;
+                      text-align: center;
+                      cursor: pointer;
+                      color: #fff;
+                      background-color: #3b444b;
+                      border-radius: 10px;
+                      box-shadow: 0 5px #070707;"
+                    >Paid Course</button>
+                      <p></p>
+                    </a>
+                  </div>
+                  
+                  
+
+
+                  
+                  <div
+                    class="col-sm-6 col-md-4 col-lg-4 wow zoomInLeft"
+                    data-wow-delay="0.3s">
+                    <a href="qr/index.html">
+                      <!-- <span><img src="icon/qr.gif"  height="50px" width="50px"></span> -->
+                      <button style="
+                      padding: 15px 25px;
+                      font-size: 28px;
+                      text-align: center;
+                      cursor: pointer;
+                      color: #fff;
+                      background-color: #3b444b;
+                      border-radius: 10px;
+                      box-shadow: 0 5px #070707;"
+                    >QR Scanner</button>
+                      <p></p>
+                    </a>
+                  </div>
+                      </div>
+                    </div>
+                    <!--sevice end-->
+                    <!-- <div class="big-hr color-1 wow zoomInUp" data-wow-delay="0.3s">
+                      <div class="text-left" style="margin-right: 40px">
+                        <h2 style="color: #fff;">You<span style="color:red;">tu</span>be<i class="fa fa-youtube-play fa-spin fa-3x fa-fw" style="color: red;"></i> Support</h2>
+                        <h5 style="color: #fff;"> We alwayas Avaible to<span style="color:red;"> Suppo</span>rt </h5><br/>
+                      </div>
+                      <div>
+                        <a class="btn btn-success btn-lg" href="https://api.whatsapp.com/send?phone=+918299890048&text=Hello this is the starting message"
+                         style="color: rgb(248, 246, 246);" >CHAT ME ON whatsapp<img src="icon/what.png"></i>
+                          <span class="sr-only">Loading...</span></a
+                        >
+                      </div>
+                    </div>
+                    <br><br> -->
+              
+                    <!-- chart-->
+                    <!-- <div class="text-center hgroup wow zoomInUp" data-wow-delay="0.3s">
+                      <button style="
+                          
+                      padding: 15px 25px;
+                      font-size: 25px;
+                      text-align: center;
+                      cursor: pointer;
+                      color: #fff;
+                      background-color:#3b444b;
+              
+                      border-radius: 10px;
+                      box-shadow: 0 5px #0c0c0c;"
+                    
+                    
+                    >Forex Heatmap</button><br/><br/><br/>
+                    <h2>Show off a snapshot of currency market action</h2>
+                     
+                    </div>
+                     -->
+                  </div>
+                </div>
+            </div>
+           
+            </div>
+  
+</body>
+</html>
